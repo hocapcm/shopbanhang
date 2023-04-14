@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+		
+	<LinearLayout
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:weightSum="2"
+		android:id="@+id/horilayout">
+			
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="Danh mục sản phẩm"
+			android:textSize="18sp"
+			android:textStyle="bold"
+			android:textColor="@color/black"/>
+			
+
+	</LinearLayout>
+
+
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/category_rec"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/horilayout"
+		android:layout_marginStart="5dp"
+		android:layout_marginEnd="5dp" />
+	<LinearLayout
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:weightSum="2"
+		android:id="@+id/horilayout1"
+		android:layout_below="@+id/category_rec">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="Sản phẩm mới nhất"
+			android:textSize="18sp"
+			android:textStyle="bold"
+			android:textColor="@color/black"/>
+
+
+	</LinearLayout>
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/view_all_rec1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/horilayout1"
+		android:layout_above="@+id/nav_bottom"
+		android:layout_marginStart="5dp"
+		android:layout_marginEnd="5dp" />
+
+	<com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/purple_500"
+        app:itemBackground="@color/purple_500"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/nav_bottom_menu"
+        android:layout_alignParentBottom="true"/>
+
+
+
+
+</RelativeLayout>

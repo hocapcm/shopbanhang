@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "60989017322",
+    "firebase_url": "https://shopbanhang-9f311-default-rtdb.firebaseio.com",
+    "project_id": "shopbanhang-9f311",
+    "storage_bucket": "shopbanhang-9f311.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60989017322:android:0645b8644577cd15d4db93",
+        "android_client_info": {
+          "package_name": "com.example.shopbanhang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "60989017322-jrkt512cn2b0k8mk0q8nhdg3he1cbnia.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKTfCZ-jWmJFEAS6xep46EW6U-sVg153w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "60989017322-jrkt512cn2b0k8mk0q8nhdg3he1cbnia.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
