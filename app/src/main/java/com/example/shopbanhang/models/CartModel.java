@@ -8,6 +8,7 @@ public class CartModel {
     String currentTime;
     String total_quantity;
     double total_price;
+    String documentID;
 
 
     public CartModel() {
@@ -25,7 +26,13 @@ public class CartModel {
     }
 
 
+    public String getDocumentID() {
+        return documentID;
+    }
 
+    public void setDocumentID(String documentID) {
+        this.documentID = documentID;
+    }
 
     public String getProductImg() {
         return productImg;
